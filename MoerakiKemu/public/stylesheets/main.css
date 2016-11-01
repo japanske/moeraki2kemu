@@ -98,3 +98,7 @@
     width: 100%;
     z-index: 2;
 }
+
+#github_link_header {
+    padding-top: 20px;
+}
