@@ -63,18 +63,18 @@
     z-index: 3;
 }
 
-.centered {
-    vertical-align: middle;
+.centerV {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.headline {
-    background-color: #FFFFFF;
-    margin: 0px;
-    padding:2% 0% 2% 5%;
-    font-family: 'Indie Flower', cursive;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
+.centerH {
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+.centered {
+    vertical-align: middle;
 }
 
 .textblock {
@@ -85,14 +85,16 @@
     position: fixed;
 }
 
-.bottom-line {
+.under-headline {
+    padding-top: 130px;
+}
+
+.headline {
     background-color: #FFFFFF;
-    margin-top: 39%;
-    padding: 2% 0% 2% 5%;
-    float: bottom;
-    position: fixed;
+    margin: 1px;
+    padding:2% 0% 2% 5%;
     font-family: 'Indie Flower', cursive;
+    position: fixed;
     width: 100%;
     z-index: 2;
 }
-
