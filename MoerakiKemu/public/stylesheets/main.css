@@ -90,13 +90,22 @@
 }
 
 .headline {
-    background-color: #FFFFFF;
     margin: 1px;
     padding:2% 0% 2% 5%;
     font-family: 'Indie Flower', cursive;
     position: fixed;
     width: 100%;
     z-index: 2;
+}
+
+.black_background {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.white_background {
+    background_color: #FFFFFF;
+    color: #000000;
 }
 
 #github_link_header {
