@@ -1,7 +1,8 @@
 @main("Hilfeseite") {
+<div class="container">
 	<div class="headline" >
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<h1>Anleitung</h1>
 			</div>
 			<div class="col-md-2 hidden-xs hidden-sm">
@@ -14,6 +15,11 @@
 				<div id="github_link_header">
 					<a  href="https://github.com/japanske/de.htwg.webtech.MoerakiKemu">GitHub</a>
 				</div>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm">
+				<button id="button-black" class="btn btn-default" onclick="makeBlack()"></button>
+				<br />
+				<button id="button-white" class="btn btn-default active" onclick="makeWhite()"></button>
 			</div>
 		</div>
 	</div>
@@ -58,4 +64,5 @@
 			</div>
 		</div>
 	</div>
-	}
+</div>
+}

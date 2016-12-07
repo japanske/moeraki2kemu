@@ -2,15 +2,33 @@
 @(message: String)
 
 @main("Hilfeseite") {
+	<div class="container-fluid" >
+		<div class="row">
+			<div class="col-md-4">
+				<span>Start</span>
+			</div>
+			<div class="col-md-4">
+				<span>Spiel</span>
+			</div>
+			<div class="col-md-4">
+				<span>Hilfe</span>
+			</div>
+		</div>
 
-<!DOCTYPE html>
-	<html>
-	    <head>
-	        <title>TEST TITLE</title>
-	    </head>
-	    <body>
-	        Nochmal testen
-	    </body>
-	</html>
+
+		$('#button-black').click(function(){
+		$('.container').addClass('black_background');
+		$('.container').removeClass('white_background');
+		$('#button-black').addClass('active');
+		$('#button-white').removeClass('active');
+		}
+
+		$('#button-white').click(function(){
+		$('.container').addClass('white_background');
+		$('.container').removeClass('black_background');
+		$('#button-black').removeClass('active');
+		$('#button-white').addClass('active');
+		}
+	</div>
 
 }
