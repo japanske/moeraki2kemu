@@ -3,32 +3,24 @@
 
 @main("Hilfeseite") {
 	<div class="container-fluid" >
-		<div class="row">
-			<div class="col-md-4">
-				<span>Start</span>
+		<div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Start</a></li>
+				<li role="presentation"><a href="#game" aria-controls="game" role="tab" data-toggle="tab">Game</a></li>
+				<li role="presentation"><a href="#help" aria-controls="help" role="tab" data-toggle="tab">Hilfe</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="home">home</div>
+				<div role="tabpanel" class="tab-pane" id="game">game</div>
+				<div role="tabpanel" class="tab-pane" id="help">help</div>
 			</div>
-			<div class="col-md-4">
-				<span>Spiel</span>
-			</div>
-			<div class="col-md-4">
-				<span>Hilfe</span>
-			</div>
+
 		</div>
-
-
-		$('#button-black').click(function(){
-		$('.container').addClass('black_background');
-		$('.container').removeClass('white_background');
-		$('#button-black').addClass('active');
-		$('#button-white').removeClass('active');
-		}
-
-		$('#button-white').click(function(){
-		$('.container').addClass('white_background');
-		$('.container').removeClass('black_background');
-		$('#button-black').removeClass('active');
-		$('#button-white').addClass('active');
-		}
 	</div>
+
 
 }
