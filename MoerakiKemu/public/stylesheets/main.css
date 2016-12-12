@@ -63,16 +63,6 @@
     z-index: 3;
 }
 
-.centerV {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.centerH {
-    padding-left: 50%;
-    padding-right: 50%;
-}
-
 .centered {
     vertical-align: middle;
 }
@@ -106,6 +96,21 @@
 .white_background {
     background_color: #FFFFFF;
     color: #000000;
+}
+
+.plate {
+    width: 50%;
+}
+
+.field {
+    display: table-cell;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.inner_field {
+    display: block;
+    width: 1%;
 }
 
 #github_link_header {
