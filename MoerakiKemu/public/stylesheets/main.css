@@ -3,6 +3,54 @@
     padding-top: 0px;
 }
 
+.ml2{
+    margin-left: 2%;
+}
+
+.ml5{
+    margin-left: 5%;
+}
+
+.ml10{
+    margin-left: 10%;
+}
+
+.mt2 {
+    margin-top: 2%;
+}
+
+.mt5 {
+    margin-top: 5%;
+}
+
+.mt10 {
+    margin-top: 10%;
+}
+
+.mr2 {
+    margin-right: 2%;
+}
+
+.mr5 {
+    margin-right: 5%;
+}
+
+.mr10 {
+    margin-right: 10%;
+}
+
+.mb2 {
+    margin-bottom: 2%;
+}
+
+.mb5 {
+    margin-bottom: 5%;
+}
+
+.mb10 {
+    margin-bottom: 10%;
+}
+
 .pl2{
     padding-left: 2%;
 }
@@ -63,10 +111,6 @@
     z-index: 3;
 }
 
-.centered {
-    vertical-align: middle;
-}
-
 .textblock {
     position: relative;
 }
@@ -85,6 +129,7 @@
     font-family: 'Indie Flower', cursive;
     position: fixed;
     width: 100%;
+    background-color: #FFFFFF;
     z-index: 2;
 }
 
@@ -98,19 +143,25 @@
     color: #000000;
 }
 
-.plate {
-    width: 50%;
+.clearBoth {
+    clear: both;
+}
+
+.fieldplane {
+    width: 700px;
+    height: 700px;
+}
+
+.fieldrow {
+    height: 10%;
 }
 
 .field {
-    display: table-cell;
+    float: left;
+    width: 12.5%;
+    height: 100%;
     border-style: solid;
     border-width: 1px;
-}
-
-.inner_field {
-    display: block;
-    width: 1%;
 }
 
 #github_link_header {
