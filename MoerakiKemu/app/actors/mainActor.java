@@ -2,7 +2,6 @@ package actors;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-
 import akka.actor.*;
 import de.htwg.se.moerakikemu.controller.ControllerModuleWithController;
 import de.htwg.se.moerakikemu.controller.IController;
@@ -21,26 +20,25 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
     private IControllerPlayer playerController = null;
     private IController controller = null;
 
-    public static Props props(ActorRef out){
+    public static Props properties(ActorRef out){
         return Props.create(mainActor.class, out);
     }
 
     private final ActorRef out;
 
-
     public mainActor(ActorRef out) {
         this.out = out;
         Injector injector = Guice.createInjector(new ControllerModuleWithController());
-        
-        
+
+
     	playerController = new ControllerPlayer();
     	controller = new Controller(8, playerController);
-    
+
     	UserInterface[] interfaces;
     	interfaces = new UserInterface[2];
     	interfaces[0] = injector.getInstance(TextUI.class);
     	interfaces[1] = new GUI(controller, playerController);
-    
+
     	for (int i = 0; i < interfaces.length; i++) {
     		((IObserverSubject) controller).attatch((ObserverObserver) interfaces[i]);
     		interfaces[i].drawCurrentState();
@@ -63,7 +61,6 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
     
     @Override
     public void addPoints(int point0, int point1) {
-           
     }
 
     @Override
@@ -88,7 +85,6 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
     
     @Override
     public void update(){
-
         out.tell(getBoardAsJSON(), self());
     }
 
@@ -142,7 +138,6 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
         if(pos < edgeLength-1){
             ret = ", ";
         }
-
         return ret;
     }
 }
