@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    $('.field').click(function(e) {
-         socket.send('setDot' + JSON.stringify($(this).attr("id")));
+    $('.field').click(function(e) {karkar
         $('#clientText').text('Clicked on ' + $(this).attr("id"));
         console.log("You pressed " + $(this).attr("id"));
         return false;
@@ -34,8 +33,7 @@ socket.onmessage = function(e) {
         console.log(event.data.substring(7, event.data.length-1));
     }
     else {
-        var json = JSON.parse(event.data)
-        var lines = json.lines;
+        var lines = event.data;
         for(i = 0; i < lines.length; i++){
             var line = lines[i];
             var cells = line.cells;
