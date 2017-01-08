@@ -125,7 +125,7 @@
 
 .headline {
     margin: 1px;
-    padding:2% 0% 2% 5%;
+    padding:2% 0 2% 5%;
     font-family: 'Indie Flower', cursive;
     position: fixed;
     width: 100%;
@@ -139,7 +139,7 @@
 }
 
 .white_background {
-    background_color: #FFFFFF;
+    background-color: #FFFFFF;
     color: #000000;
 }
 
@@ -147,9 +147,12 @@
     clear: both;
 }
 
+.index {
+    height: 570px;
+}
+
 .fieldplane {
-    width: 700px;
-    height: 700px;
+    height: 100%;
 }
 
 .fieldrow {
@@ -166,4 +169,16 @@
 
 #github_link_header {
     padding-top: 20px;
+}
+
+.startDot {
+    background-color: #009900;
+}
+
+.player1Dot {
+    background-color: #e10000;
+}
+
+.player2Dot {
+    background-color: #0000d0;
 }
