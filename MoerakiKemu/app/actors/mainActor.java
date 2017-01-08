@@ -1,4 +1,4 @@
-package actor;
+package actors;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -6,15 +6,14 @@ import com.google.inject.Injector;
 import akka.actor.*;
 import de.htwg.se.moerakikemu.controller.ControllerModuleWithController;
 import de.htwg.se.moerakikemu.controller.IController;
+import de.htwg.se.moerakikemu.controller.IControllerPlayer;
 import de.htwg.se.moerakikemu.controller.controllerimpl.Controller;
+import de.htwg.se.moerakikemu.controller.controllerimpl.ControllerPlayer;
 import de.htwg.se.moerakikemu.view.UserInterface;
 import de.htwg.se.moerakikemu.view.viewimpl.TextUI;
 import de.htwg.se.moerakikemu.view.viewimpl.gui.GUI;
 import de.htwg.se.util.observer.ObserverObserver;
 import de.htwg.se.util.observer.IObserverSubject;
-
-import de.htwg.se.moerakikemu.controller.IControllerPlayer;
-import de.htwg.se.moerakikemu.controller.controllerimpl.ControllerPlayer;
 
 public class mainActor extends UntypedActor implements UserInterface, ObserverObserver {
 
@@ -54,7 +53,12 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
         if(msg instanceof String){
             final String message = (String) msg;
 
-
+            String command = "setDot";
+            if (message.startsWith(command) && message.length() > command.length()) {
+                occupyAndGetBoard(message.substring(command.length() + 1, message.length() - 1));
+            }
+        }
+        out.tell(getBoardAsJSON(), self());
     }
     
     @Override
@@ -84,12 +88,61 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
     
     @Override
     public void update(){
-        out.tell("", self());
+
+        out.tell(getBoardAsJSON(), self());
     }
-    
-    @Override
-    public void onReceive(Object msg) throws Throwable {
-        
+
+    private String occupyAndGetBoard(final String coord){
+        final int ex = coord.indexOf("-");
+        int xy[] = new int[] {Integer.parseInt(coord.substring(0, ex)), Integer.parseInt(coord.substring(ex+1))};
+        controller.occupy(xy[0],xy[1]);
+        return getBoardAsJSON();
     }
-    
+
+    private String getBoardAsJSON(){
+        String linesObject = "\"lines\":";
+        final int boardLength = controller.getEdgeLength();
+
+        StringBuilder json = new StringBuilder("[");
+        json.append(linesObject);
+
+        json.append("{\n");
+
+        for(int i = 0; i < boardLength; i++){
+            json.append(getLinesAsJSON(i));
+            json.append(getDelOrEmpty(boardLength, i));
+        }
+        json.append("}");
+
+        return json.append("]").toString();
+    }
+
+
+    private String getLinesAsJSON(int pos){
+        String cellsObject = "\"cells\":";
+        int boardLength = controller.getEdgeLength();
+
+        StringBuilder json = new StringBuilder("[");
+        json.append(cellsObject);
+
+        json.append("{\n");
+
+        for(int i = 0; i < boardLength; i++){
+            json.append("\"" + controller.getIsOccupiedByPlayer(pos, i) + "\"");
+            json.append(getDelOrEmpty(boardLength, i));
+        }
+
+        json.append("}\n");
+
+        return json.append("]").toString();
+    }
+
+    private String getDelOrEmpty(int edgeLength, int pos){
+        String ret = "";
+        if(pos < edgeLength-1){
+            ret = ", ";
+        }
+
+        return ret;
+    }
 }
