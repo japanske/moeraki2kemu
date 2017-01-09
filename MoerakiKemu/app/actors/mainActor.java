@@ -56,7 +56,6 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
                 occupyAndGetBoard(message.substring(command.length() + 1, message.length() - 1));
             }
         }
-        out.tell(getBoardAsJSON(), self());
     }
     
     @Override
@@ -99,18 +98,24 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
         String linesObject = "\"lines\":";
         final int boardLength = controller.getEdgeLength();
 
-        StringBuilder json = new StringBuilder("[");
+        StringBuilder json = new StringBuilder("{");
         json.append(linesObject);
 
-        json.append("{\n");
+        json.append("[\n");
 
         for(int i = 0; i < boardLength; i++){
             json.append(getLinesAsJSON(i));
             json.append(getDelOrEmpty(boardLength, i));
         }
-        json.append("}");
+        json.append("],\n");
+        json.append("\"player1\":"+"\""+playerController.getPlayer1Name()+"\",\n");
+        json.append("\"player2\":"+"\""+playerController.getPlayer2Name()+"\",\n");
+        json.append("\"player1Points:\":"+"\""+playerController.getPlayer1Points()+"\",\n");
+        json.append("\"player2Points:\":"+"\""+playerController.getPlayer2Points()+"\",\n");
+        json.append("\"lastMove\":"+"\""+playerController.getCurrentPlayerName()+" hat gesetzt\"\n");
+        System.out.println(json);
 
-        return json.append("]").toString();
+        return json.append("}").toString();
     }
 
 
@@ -118,19 +123,19 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
         String cellsObject = "\"cells\":";
         int boardLength = controller.getEdgeLength();
 
-        StringBuilder json = new StringBuilder("[");
+        StringBuilder json = new StringBuilder("{");
         json.append(cellsObject);
 
-        json.append("{\n");
+        json.append("[");
 
         for(int i = 0; i < boardLength; i++){
             json.append("\"" + controller.getIsOccupiedByPlayer(pos, i) + "\"");
             json.append(getDelOrEmpty(boardLength, i));
         }
 
-        json.append("}\n");
+        json.append("]\n");
 
-        return json.append("]").toString();
+        return json.append("}").toString();
     }
 
     private String getDelOrEmpty(int edgeLength, int pos){
