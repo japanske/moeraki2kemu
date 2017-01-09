@@ -88,9 +88,9 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
         out.tell(getBoardAsJSON(), self());
     }
 
-    private String occupyAndGetBoard(final String coord){
-        final int ex = coord.indexOf("-");
-        int xy[] = new int[] {Integer.parseInt(coord.substring(0, ex)), Integer.parseInt(coord.substring(ex+1))};
+    private String occupyAndGetBoard(String coord){
+        int ex = coord.indexOf("-");
+        int xy[] = {Integer.parseInt(coord.substring(0, ex)), Integer.parseInt(coord.substring(ex+1))};
         controller.occupy(xy[0],xy[1]);
         return getBoardAsJSON();
     }

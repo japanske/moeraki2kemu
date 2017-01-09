@@ -10,17 +10,17 @@ $(document).ready(function() {
 var socket = new WebSocket("ws://localhost:9000/ws");
 
 socket.onopen = function(e) {
-    $('#clientText').text("Verbindung hergestellt.\n");
+    $('#clientText').append("Verbindung hergestellt.\n");
     console.log("Verbindung hergestellt.");
 };
 
 socket.onerror = function(e) {
-    $('#clientText').text("Leider ist ein Fehler aufgetreten!\n");
+    $('#clientText').append("Leider ist ein Fehler aufgetreten!\n");
     console.log("Leider ist ein Fehler aufgetreten");
 };
 
 socket.onclose = function(e) {
-    $('#clientText').text("Verbindung getrennt.\n");
+    $('#clientText').append("Verbindung getrennt.\n");
     console.log("Verbindung getrennt");
 };
 
@@ -43,17 +43,17 @@ socket.onmessage = function(e) {
                 var cell = cells[j];
                 if(cell == "StartDot") {
                     $("#" + i + '-' + j).addClass('startDot');
-                    $('#clientText').text('Die Moeraki-Kugel wurde auf ' + i + '-' + j + ' gesetzt.\n');
+                    $('#clientText').append('Die Moeraki-Kugel wurde auf ' + i + '-' + j + ' gesetzt.\n');
                     console.log("Die Moeraki-Kugel wurde auf " + i + "-" + j + " gesetzt.");
                 }
                 else if(cell == "Spieler 1") {
                     $("#" + i + '-' + j).addClass('player1Dot');
-                    $('#clientText').text('Spieler 1 hat auf ' + i + '-' + j + ' gesetzt.\n');
+                    $('#clientText').append('Spieler 1 hat auf ' + i + '-' + j + ' gesetzt.\n');
                     console.log("Spieler 1 hat auf " + i + "-" + j + " gesetzt.");
                 }
                 else if(cell == "Spieler 2") {
                     $("#" + i + '-' + j).addClass('player2Dot');
-                    $('#clientText').text('Spieler 2 hat auf ' + i + '-' + j + ' gesetzt.\n');
+                    $('#clientText').append('Spieler 2 hat auf ' + i + '-' + j + ' gesetzt.\n');
                     console.log("Spieler 2 hat auf " + i + "-" + j + " gesetzt.");
                 }
             }        

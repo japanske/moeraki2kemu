@@ -5,6 +5,7 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
 GET		/help						controllers.HomeController.gameHelp
+GET     /board                      controllers.HomeController.board
 
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
@@ -15,4 +16,4 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 #websocket
-GET /ws                             controllers.HomeController.socket
+GET     /ws                         controllers.HomeController.socket
