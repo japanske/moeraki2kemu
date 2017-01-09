@@ -167,10 +167,6 @@
     border-width: 1px;
 }
 
-#github_link_header {
-    padding-top: 20px;
-}
-
 .startDot {
     background-color: #009900;
 }
@@ -181,4 +177,8 @@
 
 .player2Dot {
     background-color: #0000d0;
+}
+
+#github_link_header {
+    padding-top: 20px;
 }

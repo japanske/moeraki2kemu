@@ -20,7 +20,7 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
     private IControllerPlayer playerController = null;
     private IController controller = null;
 
-    public static Props properties(ActorRef out){
+    public static Props props(ActorRef out){
         return Props.create(mainActor.class, out);
     }
 
