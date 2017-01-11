@@ -1,0 +1,6 @@
+{
+  "name": "MoerakiKemu",
+  "short_name": "MoerakiKemu",
+  "start_url": "/",
+  "display": "standalone"
+}
