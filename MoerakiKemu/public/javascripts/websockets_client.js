@@ -31,6 +31,8 @@ socket.onmessage = function(e) {
     var player2Points = json.player2Points;
     var lastMove = json.lastMove;
     
+    console.log(json);
+    
     console.log(player1Points);
     console.log(player2Points);
     
@@ -53,7 +55,7 @@ socket.onmessage = function(e) {
     
     $('#player1Name').text(player1);
     $('#player2Name').text(player2);
-    $('#player1Counter').text(p1p);
-    $('#player2Counter').text(p2p);
+    $('#player1Counter').text(player1Points);
+    $('#player2Counter').text(player2Points);
     $('#clientText').append(lastMove+"\n");
 }

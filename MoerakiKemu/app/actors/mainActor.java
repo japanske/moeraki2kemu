@@ -110,8 +110,8 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
         json.append("],\n");
         json.append("\"player1\":"+"\""+playerController.getPlayer1Name()+"\",\n");
         json.append("\"player2\":"+"\""+playerController.getPlayer2Name()+"\",\n");
-        json.append("\"player1Points:\":"+"\""+playerController.getPlayer1Points()+"\",\n");
-        json.append("\"player2Points:\":"+"\""+playerController.getPlayer2Points()+"\",\n");
+        json.append("\"player1Points\":"+"\""+playerController.getPlayer1Points()+"\",\n");
+        json.append("\"player2Points\":"+"\""+playerController.getPlayer2Points()+"\",\n");
         json.append("\"lastMove\":"+"\""+playerController.getCurrentPlayerName()+" hat gesetzt\"\n");
         System.out.println(json);
 
