@@ -40,10 +40,6 @@ public class HomeController extends Controller {
         return ok(help.render());
     }
     
-    public Result board() {
-        return ok(board.render(""));
-    }
-    
 	public LegacyWebSocket<String> socket() {
 
         return WebSocket.withActor(mainActor::props);
