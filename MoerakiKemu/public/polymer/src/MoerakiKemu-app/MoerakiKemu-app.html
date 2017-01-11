@@ -1,5 +1,16 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-slider/paper-slider.html">
 <link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../../bower_components/google-signin/google-signin.html">
+<link rel="import" href="../../bower_components/google-apis/google-apis.html">
+<link rel="import" href="../../bower_components/google-apis/google-client-loader.html">
+<link rel="import" href="../../bower_components/google-apis/google-js-api.html">
+<link rel="import" href="../../bower_components/google-apis/index.html">
+<link rel="import" href="../../bower_components/google-apis/google-legacy-loader.html">
+<link rel="import" href="../../bower_components/google-apis/google-maps-loader.html">
+<link rel="import" href="../../bower_components/google-apis/google-plusone-loader.html">
+<link rel="import" href="../../bower_components/google-apis/google-realtime-loader.html">
+<link rel="import" href="../../bower_components/google-apis/google-youtube-loader.html">
 
 <dom-module id="MoerakiKemu-app">
   <template>
@@ -8,6 +19,40 @@
         display: block;
       }
     </style>
+			<h3 class="no-top-distance pt2">Spielvorbereitung</h3>
+			<paper-slider min="-100" max="100" value="50"></paper-slider>
+			<p>Die Spieler bestimmen wer der Erste und wer der zweite Spieler sein möchte, und tragen sich entsprehend ein.</p>
+			<p>Der erste Spieler bekommt die schwarzen Spielsteine, der zweite Spieler die Weißen</p>
+			<br/>
+			<br/>
+			<h3>Spielbeginn</h3>
+			<p>Der zweite Spieler darf die Moeraki-Kugel in eine der neun inneren Felder setzten.</p>
+			<br/>
+			<br/>
+			<h3>Spielverlauf</h3>
+			<p> Nachdem die Moeraki-Kugel gesetzt wurde, darf Spieler Eins auf eine beliebige Kante einen seiner Steine legen</p>
+			<p> Anschließend setzt der zweite Spieler seinen Stein. Das wird abwechselnd fortgeführt, bis ein Spieler gewinnt.</p>
+			<br/>
+			<h4>Legen von Spielsteinen</h4>
+			<p>Wird ein Strandquadrat vollständig an allen Ecken von Spielsteinen eingeschlossen, werden die gleichfarbgen Steine gezählt. Der Spieler der 3 Spielsteine um das Quadrat gelegt hat, bekommt einen Punkt. Sofern beide Spieler 2 Steine auf die 4 Ecken gelegt haben, erhält keiner einen Punkt.</p>
+			<p>Hat ein Spieler alle 4 Ecken belegt, beendet er das Spiel.</p>
+			<p>Die Moeraki-Kugel gilt als neutraler Punkt und zählt nicht zu einem Spieler. Dementsprechend gewinnt der Spieler einen Punkt der bei einem, an der Moeraki-Kugel angrenzendem, Feld die mehrheit (2) Spielsteine hat.</p>
+			<p> Die Punktzählung erfolgt sobald ein Spielstein die letzte Ecke eines Quadrats füllt. Es kommt nicht darauf an, welcher Spieler diesen legte.</p>
+			<p>Man kann nicht beenden, sofern man ein Quadrat schließt, das an die Moeraki-Kugel angrenzt.</p>
+			<br/>
+			<br/>
+			<h3>Spielende</h3>
+			<p> Es gbt drei Möglichkeiten ein Spiel zu beenden: </p>
+			<ul>
+				<li>"Tahuna": Es gelingt einem Spieler ein Quadrat vollständig zu umschließen.</li>
+				<li>"Ara": Es gelingt einem Spieler, von der Moeraki-Kugel bis zum Rand mit seinen Kugel einen Linie zu bilden.</li>
+				<li>"Marae": Sämtliche Ecken des Spielfelds sind belegt.</li>
+			</ul>
+			<p>Sobald ein Spiel beendet wurde, werden die Punkte gezählt. Der Spieler mit den meisten Punkten gewinnt.</p>
+			<p>Der Spieler der beendet hat, gewinnt NICHT automatisch weil er beendet hat, sondern es werden regulär die Punkte gezählt.</p>
+			<br/>
+			<br/>
+
   </template>
 
   <script>
@@ -19,6 +64,42 @@
         prop1: {
           type: String,
           value: 'MoerakiKemu-app',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
+
+<dom-module id="home-page">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+	<paper-material elevation="2">
+		<div class="headline" >
+	  		<h1>Herzlich Willkommen!</h1>
+	  		</paper-material>
+	  		<p>Du moechtest Moeraki Kemu spielen? Dann logge dich einfach mit deinem Google-Konto ein und 
+	  		schon kann es losgehen!</p>
+	  	</div>
+	  	<br/>
+	  	<br/>
+	  	<br/>
+		<google-signin label-signin="Mit Google einloggen" client-id="252965877720-201gufru07r6bj52n668hl0n1eds13dk.apps.googleusercontent.com" scopes="https://www.googleapis.com/auth/drive"></google-signin>
+
+  </template>
+  <script>
+    Polymer({
+
+      is: 'home-page',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'home-page',
         },
       },
 

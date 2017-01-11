@@ -1,5 +1,5 @@
 @(message: String)
-@main("Hilfeseite") {
+@main("Moeraki Kemu") {
     <script src="@routes.Assets.versioned("javascripts/websockets_client.js")"></script>
 	<div class="container-fluid" >
 		<div>
@@ -14,7 +14,7 @@
 			<!-- Tab panes -->
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="home">
-
+				<home-page></home-page>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="game">
 				    <div class="container mt5 index">

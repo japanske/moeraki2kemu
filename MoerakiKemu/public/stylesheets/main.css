@@ -124,11 +124,7 @@
 }
 
 .headline {
-    margin: 1px;
-    padding:2% 0 2% 5%;
     font-family: 'Indie Flower', cursive;
-    position: fixed;
-    width: 100%;
     background-color: #FFFFFF;
     z-index: 2;
 }
