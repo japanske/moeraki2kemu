@@ -119,6 +119,11 @@
     position: fixed;
 }
 
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .under-headline {
     padding-top: 130px;
 }
@@ -177,6 +182,14 @@
 
 .player2Dot {
     background-color: #0000d0;
+}
+
+#login-div {
+    width: 525px;
+}
+
+#login-button {
+    width: 120px;
 }
 
 #github_link_header {
