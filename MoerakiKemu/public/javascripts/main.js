@@ -18,4 +18,8 @@ $(document).ready(function (e) {
         $('.headline').removeClass('white_background');
     });
 
+    function onSignIn(googleUser) {
+        window.location = "/main";
+    }
+
 });
