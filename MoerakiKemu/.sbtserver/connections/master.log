@@ -1,13 +1,13 @@
-New log file opened at Fri Jan 13 12:52:11 CET 2017 by 2828@DESKTOP-5PRVS2V
-Taking next connection to: 58171
-New client attempting to connect on port: 58172-58171
-  Address = /172.20.162.76:58171
-This client on port 58172 has uuid 543d4fa7-ecd7-46f5-b213-b02f5390e549 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-543d4fa7-ecd7-46f5-b213-b02f5390e549
-Taking next connection to: 58171
-New client attempting to connect on port: 58173-58171
-  Address = /172.20.162.76:58171
-Handshake exception on socket: 58173
+New log file opened at Sat Jan 14 14:45:25 CET 2017 by 7552@Besitzer-PC
+Taking next connection to: 49561
+New client attempting to connect on port: 49562-49561
+  Address = /192.168.0.104:49561
+This client on port 49562 has uuid d7143d4c-32af-40a0-bcd2-a44cce589523 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-d7143d4c-32af-40a0-bcd2-a44cce589523
+Taking next connection to: 49561
+New client attempting to connect on port: 49563-49561
+  Address = /192.168.0.104:49561
+Handshake exception on socket: 49563
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -23,15 +23,15 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 58171
-New client attempting to connect on port: 58174-58171
-  Address = /172.20.162.76:58171
-This client on port 58174 has uuid 6527a5e6-94f7-4ead-96be-57a5c2b6bd23 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-543d4fa7-ecd7-46f5-b213-b02f5390e549, play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23
-Taking next connection to: 58171
-New client attempting to connect on port: 58175-58171
-  Address = /172.20.162.76:58171
-Handshake exception on socket: 58175
+Taking next connection to: 49561
+New client attempting to connect on port: 49564-49561
+  Address = /192.168.0.104:49561
+This client on port 49564 has uuid da3a7b50-5d3b-4d9b-9ef9-1668012a332f configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-d7143d4c-32af-40a0-bcd2-a44cce589523, activator-da3a7b50-5d3b-4d9b-9ef9-1668012a332f
+Taking next connection to: 49561
+New client attempting to connect on port: 49566-49561
+  Address = /192.168.0.104:49561
+Handshake exception on socket: 49566
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -47,48 +47,15 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 58171
-New client attempting to connect on port: 58176-58171
-  Address = /172.20.162.76:58171
-This client on port 58176 has uuid b6c4fe6b-9504-44b2-b6e3-2712302467a7 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-543d4fa7-ecd7-46f5-b213-b02f5390e549, play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23, play-fork-run-b6c4fe6b-9504-44b2-b6e3-2712302467a7
-Taking next connection to: 58171
-New client attempting to connect on port: 58178-58171
-  Address = /172.20.162.76:58171
-Handshake exception on socket: 58178
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.io.BufferedInputStream.fill(Unknown Source)
-	at java.io.BufferedInputStream.read(Unknown Source)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 58171
-New client attempting to connect on port: 58179-58171
-  Address = /172.20.162.76:58171
-This client on port 58179 has uuid a91b0d91-7a75-464b-9dbc-c97f7dda7ca4 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-543d4fa7-ecd7-46f5-b213-b02f5390e549, play-fork-run-a91b0d91-7a75-464b-9dbc-c97f7dda7ca4
-Taking next connection to: 58171
+Taking next connection to: 49561
+New client attempting to connect on port: 49567-49561
+  Address = /192.168.0.104:49561
+This client on port 49567 has uuid e4c0585b-2b92-455c-b63e-b9f1d8cb38cb configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-da3a7b50-5d3b-4d9b-9ef9-1668012a332f, play-fork-run-e4c0585b-2b92-455c-b63e-b9f1d8cb38cb
+Taking next connection to: 49561
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58171
+Taking next connection to: 49561
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58171
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58171
-Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 2828@DESKTOP-5PRVS2V logs at Fri Jan 13 13:04:47 CET 2017, goodbye.
+Taking next connection to: 49561
