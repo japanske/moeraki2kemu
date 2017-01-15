@@ -1,9 +1,10 @@
 @(message: String)
-@main("Moeraki Kemu") {
+
+
+@main("Moeraki-Kemu") {
     <script src="@routes.Assets.versioned("javascripts/websockets_client.js")"></script>
 	<div class="container-fluid" >
 		<div>
-
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Start</a></li>
@@ -14,10 +15,9 @@
 			<!-- Tab panes -->
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="home">
-				<home-page></home-page>
+
 				</div>
 				<div role="tabpanel" class="tab-pane" id="game">
-					%{ if (<gotoGame-page></gotoGame-page>)}%
 				    <div class="container mt5 index">
 				        <div class="col-md-3">
 		            		<p>Punkte <span id="player1Name">Player 1</span>: <textarea class="pl5 form-control" rows="1" id="player1Counter"></textarea></p>
