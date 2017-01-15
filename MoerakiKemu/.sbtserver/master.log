@@ -1,5 +1,5 @@
-New log file opened at Fri Jan 13 12:52:11 CET 2017 by 2828@DESKTOP-5PRVS2V
-jvm 2828@DESKTOP-5PRVS2V
+New log file opened at Sun Jan 15 12:15:49 CET 2017 by 9300@DESKTOP-5PRVS2V
+jvm 9300@DESKTOP-5PRVS2V
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.101-b13
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\project, returning: (moerakikemu-build)
 Loading project definition from C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@47c50537, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@61da2f89, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,9 +67,9 @@ Set current project to MoerakiKemu (in build file:/C:/Users/janin/git/de.htwg.we
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> {file:/C:/Users/janin/git/de.htwg.webtech.MoerakiKemu/MoerakiKemu/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@17a9fdf, check cycles: false
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@827f573, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -86,18 +86,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 13.01.2017 12:52:21
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/janin/git/de.htwg.webtech.MoerakiKemu/MoerakiKemu/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@15f835e8, check cycles: false
-Total time: 0 s, completed 13.01.2017 12:52:22
+Total time: 2 s, completed 15.01.2017 12:15:59
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/janin/git/de.htwg.webtech.MoerakiKemu/MoerakiKemu/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@27a9b3cb, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@19e7e4b9, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -114,18 +108,40 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 13.01.2017 12:52:22
+Total time: 1 s, completed 15.01.2017 12:16:01
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/janin/git/de.htwg.webtech.MoerakiKemu/MoerakiKemu/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@57fd3cc4, check cycles: false
-Total time: 0 s, completed 13.01.2017 12:52:23
+Running task... Cancel: sbt.server.ServerTaskCancellation@1517ef02, check cycles: false
+Total time: 0 s, completed 15.01.2017 12:16:01
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/janin/git/de.htwg.webtech.MoerakiKemu/MoerakiKemu/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@29a9b42f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 15.01.2017 12:16:02
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@16846508, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4e06b7ec, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -142,30 +158,30 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 13.01.2017 12:52:44
+Total time: 1 s, completed 15.01.2017 12:16:06
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@ca2c9ec, check cycles: false
-Total time: 0 s, completed 13.01.2017 12:52:44
+Running task... Cancel: sbt.server.ServerTaskCancellation@71dd244a, check cycles: false
+Total time: 0 s, completed 15.01.2017 12:16:07
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/janin/git/de.htwg.webtech.MoerakiKemu/MoerakiKemu/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@4268bb23, check cycles: false
-Total time: 1 s, completed 13.01.2017 12:52:48
+Running task... Cancel: sbt.server.ServerTaskCancellation@4721817b, check cycles: false
+Total time: 1 s, completed 15.01.2017 12:16:11
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@6a68a3c, check cycles: false
-Total time: 0 s, completed 13.01.2017 12:52:51
+Running task... Cancel: sbt.server.ServerTaskCancellation@76c69461, check cycles: false
+Total time: 0 s, completed 15.01.2017 12:16:14
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/janin/git/de.htwg.webtech.MoerakiKemu/MoerakiKemu/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@344ec542, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d15a14c, check cycles: false
 SLF4J: The following set of substitute loggers may have been accessed
 SLF4J: during the initialization phase. Logging calls during this
 SLF4J: phase were not honored. However, subsequent logging calls to these
@@ -192,13 +208,6 @@ Copy resource mappings:
 	(C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\conf\application.conf,C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\target\scala-2.11\classes\application.conf)
 	(C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\conf\logback.xml,C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\target\scala-2.11\classes\logback.xml)
 	(C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\conf\routes,C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\target\scala-2.11\classes\routes)
-Total time: 5 s, completed 13.01.2017 12:52:59
+Total time: 5 s, completed 15.01.2017 12:16:21
 > server-post-command-cleanup
 > server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 2828@DESKTOP-5PRVS2V logs at Fri Jan 13 13:04:47 CET 2017, goodbye.
