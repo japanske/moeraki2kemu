@@ -1,0 +1,9 @@
+New log file opened at Fri Jan 13 12:52:11 CET 2017 by 2828@DESKTOP-5PRVS2V
+Sending msg to client play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\.sbtserver\connections\master.log))
+Sending msg to client play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\.sbtserver\master.log))
+Sending msg to client play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\janin\git\de.htwg.webtech.MoerakiKemu\MoerakiKemu\.sbtserver\connections\play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23.log))
+Reading next message from client.
+Client play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23 closed, java.net.SocketException: Connection reset, shutting down
+Stopping client.
+Client play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23 thread exiting.
+Dropping message (0,ReceivedResponse()) to dead client play-fork-run-6527a5e6-94f7-4ead-96be-57a5c2b6bd23
