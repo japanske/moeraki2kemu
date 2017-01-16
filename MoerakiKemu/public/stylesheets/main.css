@@ -136,6 +136,7 @@ aw.no-top-distance {
 }
 .fontart {
 	font-family: 'Indie Flower', cursive;
+	opacity: 0.5;
 }
 
 .background {
@@ -151,6 +152,11 @@ aw.no-top-distance {
     padding-right: 20px;
     padding-left: 20px;
     opacity: 0.5;
+}
+
+.container {
+	font-size: 1.8em;
+	opacity: 0.5;
 }
 
 .black_background {
@@ -209,4 +215,5 @@ aw.no-top-distance {
 
 #github_link_header {
     padding-top: 20px;
+    text-align: left;
 }
