@@ -145,16 +145,16 @@ aw.no-top-distance {
 }
 
 h1 {
-	font-size: 3.0em;
+	font-size: 2.0em;
 	font-family: 'Indie Flower', cursive;
 }
 
 h3 {
-	font-size:2.0em;
+	font-size:1.5em;
 	font-family: 'Indie Flower', cursive;
 }
 h4 {
-	font-size:1.2em;
+	font-size:1.5em;
 	font-family: 'Indie Flower', cursive;
 }
 .fontart {
@@ -186,7 +186,7 @@ h4 {
 	font-size: 1.8em;
     z-index:2;
     background-color: #FFFFFF;
-    opacity: 0.3;
+    opacity: 0.8;
     padding-top: 3%
 }
 
