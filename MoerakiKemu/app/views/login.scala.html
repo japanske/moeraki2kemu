@@ -1,0 +1,15 @@
+@(message: String)
+
+
+@main("Login") {
+<div id="login-div" class="middle">
+    <h1> Willkommen zu Moeraki Kemu!</h1>
+    <h3> Bitte loggen Sie sich ein um das Spiel zu spielen.</h3>
+    <div id="login-button" class="middle pt5"><div class="g-signin2" data-onsuccess="onSignIn"></div></div>
+</div>
+<script>
+    function onSignIn(googleUser) {
+        window.location = "/main"
+    };
+</script>
+}

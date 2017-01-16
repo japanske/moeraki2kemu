@@ -1,4 +1,4 @@
-.no-top-distance {
+aw.no-top-distance {
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -119,14 +119,76 @@
     position: fixed;
 }
 
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .under-headline {
     padding-top: 130px;
 }
 
+.names{
+	z-index:2;
+	background-color: #FFFFFF;
+    opacity: 0.5;
+    margin-right: 1400px;
+}
+
 .headline {
     font-family: 'Indie Flower', cursive;
+    margin-right: 100px;
+    margin-left: 100px;
+    color: #000000;
     background-color: #FFFFFF;
-    z-index: 2;
+    opacity: 0.5;  
+}
+
+h1 {
+	font-size: 2.0em;
+	font-family: 'Indie Flower', cursive;
+}
+
+h3 {
+	font-size:1.5em;
+	font-family: 'Indie Flower', cursive;
+}
+
+h4 {
+	font-size:1.5em;
+	font-family: 'Indie Flower', cursive;
+}
+.fontart {
+	font-family: 'Indie Flower', cursive;
+	z-index: 3;
+}
+
+#content {
+	background-image: url(http://tripfreakz.com/uploads/mo05.jpg);
+	background-size: cover;
+	background-attachement: fixed;
+}
+
+.beschreibung {
+	font-family: 'Indie Flower', cursive;
+    background-color: #FFFFFF;
+    font-size: 2.0em;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+.help {
+	background-color: #FFFFFF;
+	font-size: 2.0em;
+    opacity: 0.5;
+}
+
+.container {
+	font-size: 1.8em;
+    z-index:2;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    padding-top: 3%
 }
 
 .black_background {
@@ -175,6 +237,18 @@
     background-color: #0000d0;
 }
 
+#login-div {
+    width: 525px;
+}
+
+#login-button {
+    width: 120px;
+}
+
 #github_link_header {
-    padding-top: 20px;
+    text-align: left;
+    margin-right: 1443px;
+    z-index:2;
+    background-color: #A1BBFF;
+    opacity: 0.5;
 }

@@ -1,9 +1,10 @@
 @(message: String)
-@main("Moeraki Kemu") {
+
+
+@main("Moeraki-Kemu") {
     <script src="@routes.Assets.versioned("javascripts/websockets_client.js")"></script>
 	<div class="container-fluid" >
 		<div>
-
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Start</a></li>
@@ -14,7 +15,7 @@
 			<!-- Tab panes -->
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="home">
-				<home-page></home-page>
+						<MoerakiKemu-app></MoerakiKemu-app>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="game">
 				    <div class="container mt5 index">
@@ -22,131 +23,97 @@
 		            		<p>Punkte <span id="player1Name">Player 1</span>: <textarea class="pl5 form-control" rows="1" id="player1Counter"></textarea></p>
         			    	<p>Punkte <span id="player2Name">Player 2</span>: <textarea class="pl5 form-control" rows="1" id="player2Counter"></textarea></p>
 				        </div>
-    				    <div class="col-md-6 fieldplane center-block">
-        					<div class="fieldrow">
-        						<div class="field" id="0-0"></div>
-        						<div class="field" id="0-1"></div>
-        						<div class="field" id="0-2"></div>
-        						<div class="field" id="0-3"></div>
-        						<div class="field" id="0-4"></div>
-        						<div class="field" id="0-5"></div>
-        						<div class="field" id="0-6"></div>
-        						<div class="field" id="0-7"></div>
-        					</div>
-        					<div class="fieldrow">
-        						<div class="field" id="1-0"></div>
-        						<div class="field" id="1-1"></div>
-        						<div class="field" id="1-2"></div>
-        						<div class="field" id="1-3"></div>
-        						<div class="field" id="1-4"></div>
-        						<div class="field" id="1-5"></div>
-        						<div class="field" id="1-6"></div>
-        						<div class="field" id="1-7"></div>
-        					</div>
-        					<div class="fieldrow">
-        						<div class="field" id="2-0"></div>
-        						<div class="field" id="2-1"></div>
-        						<div class="field" id="2-2"></div>
-        						<div class="field" id="2-3"></div>
-        						<div class="field" id="2-4"></div>
-        						<div class="field" id="2-5"></div>
-        						<div class="field" id="2-6"></div>
-        						<div class="field" id="2-7"></div>
-        					</div>
-        					<div class="fieldrow">
-        						<div class="field" id="3-0"></div>
-        						<div class="field" id="3-1"></div>
-        						<div class="field" id="3-2"></div>
-        						<div class="field" id="3-3"></div>
-        						<div class="field" id="3-4"></div>
-        						<div class="field" id="3-5"></div>
-        						<div class="field" id="3-6"></div>
-        						<div class="field" id="3-7"></div>
-        					</div>
-        					<div class="fieldrow">
-        						<div class="field" id="4-0"></div>
-        						<div class="field" id="4-1"></div>
-        						<div class="field" id="4-2"></div>
-        						<div class="field" id="4-3"></div>
-        						<div class="field" id="4-4"></div>
-        						<div class="field" id="4-5"></div>
-        						<div class="field" id="4-6"></div>
-        						<div class="field" id="4-7"></div>
-        					</div>
-        					<div class="fieldrow">
-        						<div class="field" id="5-0"></div>
-        						<div class="field" id="5-1"></div>
-        						<div class="field" id="5-2"></div>
-        						<div class="field" id="5-3"></div>
-        						<div class="field" id="5-4"></div>
-        						<div class="field" id="5-5"></div>
-        						<div class="field" id="5-6"></div>
-        						<div class="field" id="5-7"></div>
-        					</div>
-        					<div class="fieldrow">
-        						<div class="field" id="6-0"></div>
-        						<div class="field" id="6-1"></div>
-        						<div class="field" id="6-2"></div>
-        						<div class="field" id="6-3"></div>
-        						<div class="field" id="6-4"></div>
-        						<div class="field" id="6-5"></div>
-        						<div class="field" id="6-6"></div>
-        						<div class="field" id="6-7"></div>
-        					</div>
-        					<div class="fieldrow">
-        						<div class="field" id="7-0"></div>
-        						<div class="field" id="7-1"></div>
-        						<div class="field" id="7-2"></div>
-        						<div class="field" id="7-3"></div>
-        						<div class="field" id="7-4"></div>
-        						<div class="field" id="7-5"></div>
-        						<div class="field" id="7-6"></div>
-        						<div class="field" id="7-7"></div>
-        					</div>
-        				</div>        			
+    				        <div class="col-md-6 fieldplane center-block">
+	    				        <div class="fieldrow">
+	        						<div class="field" id="0-0"></div>
+	        						<div class="field" id="0-1"></div>
+	        						<div class="field" id="0-2"></div>
+	        						<div class="field" id="0-3"></div>
+	        						<div class="field" id="0-4"></div>
+	        						<div class="field" id="0-5"></div>
+	        						<div class="field" id="0-6"></div>
+	        						<div class="field" id="0-7"></div>
+	        					</div>
+								<div class="fieldrow">
+									<div class="field" id="1-0"></div>
+									<div class="field" id="1-1"></div>
+									<div class="field" id="1-2"></div>
+									<div class="field" id="1-3"></div>
+									<div class="field" id="1-4"></div>
+									<div class="field" id="1-5"></div>
+									<div class="field" id="1-6"></div>
+									<div class="field" id="1-7"></div>
+								</div>
+								<div class="fieldrow">
+									<div class="field" id="2-0"></div>
+									<div class="field" id="2-1"></div>
+									<div class="field" id="2-2"></div>
+									<div class="field" id="2-3"></div>
+									<div class="field" id="2-4"></div>
+									<div class="field" id="2-5"></div>
+									<div class="field" id="2-6"></div>
+									<div class="field" id="2-7"></div>
+								</div>
+								<div class="fieldrow">
+									<div class="field" id="3-0"></div>
+									<div class="field" id="3-1"></div>
+									<div class="field" id="3-2"></div>
+									<div class="field" id="3-3"></div>
+									<div class="field" id="3-4"></div>
+									<div class="field" id="3-5"></div>
+									<div class="field" id="3-6"></div>
+									<div class="field" id="3-7"></div>
+								</div>
+								<div class="fieldrow">
+									<div class="field" id="4-0"></div>
+									<div class="field" id="4-1"></div>
+									<div class="field" id="4-2"></div>
+									<div class="field" id="4-3"></div>
+									<div class="field" id="4-4"></div>
+									<div class="field" id="4-5"></div>
+									<div class="field" id="4-6"></div>
+									<div class="field" id="4-7"></div>
+								</div>
+								<div class="fieldrow">
+									<div class="field" id="5-0"></div>
+									<div class="field" id="5-1"></div>
+									<div class="field" id="5-2"></div>
+									<div class="field" id="5-3"></div>
+									<div class="field" id="5-4"></div>
+									<div class="field" id="5-5"></div>
+									<div class="field" id="5-6"></div>
+									<div class="field" id="5-7"></div>
+								</div>
+								<div class="fieldrow">
+									<div class="field" id="6-0"></div>
+									<div class="field" id="6-1"></div>
+									<div class="field" id="6-2"></div>
+									<div class="field" id="6-3"></div>
+									<div class="field" id="6-4"></div>
+									<div class="field" id="6-5"></div>
+									<div class="field" id="6-6"></div>
+									<div class="field" id="6-7"></div>
+								</div>
+								<div class="fieldrow">
+									<div class="field" id="7-0"></div>
+									<div class="field" id="7-1"></div>
+									<div class="field" id="7-2"></div>
+									<div class="field" id="7-3"></div>
+									<div class="field" id="7-4"></div>
+									<div class="field" id="7-5"></div>
+									<div class="field" id="7-6"></div>
+									<div class="field" id="7-7"></div>
+								</div>
+							</div>  		
         				<div class="col-md-3">
         			        <textarea class="pl5 form-control" rows="22" id="clientText"></textarea>
         			    </div>
         			</div>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="help">
-				    <div class="container">
-            			<h3 class="no-top-distance pt2">Spielvorbereitung</h3>
-            			<p>Die Spieler bestimmen wer der Erste und wer der zweie Spieler sein möchte, und tragen sich entsprehend ein.</p>
-            			<p>Der erste Spieler bekommt die schwarzen Spielsteine, der zweite Spieler die Weißen</p>
-            			<br/>
-            			<br/>
-            			<h3>Spielbeginn</h3>
-            			<p>Der zweite Spieler darf die Moeraki-Kugel in eine der neun inneren Felder setzten.</p>
-            			<br/>
-            			<br/>
-            			<h3>Spielverlauf</h3>
-            			<p> Nachdem die Moeraki-Kugel gesetzt wurde, darf Spieler Eins auf eine beliebige Kante einen seiner Steine legen</p>
-            			<p> Anschließend setzt der zweite Spieler seinen Stein. Das wird abwechselnd fortgeführt, bis ein Spieler gewinnt.</p>
-            			<br/>
-            			<h4>Legen von Spielsteinen</h4>
-            			<p>Wird ein Strandquadrat vollständig an allen Ecken von Spielsteinen eingeschlossen, werden die gleichfarbgen Steine gezählt. Der Spieler der 3 Spielsteine um das Quadrat gelegt hat, bekommt einen Punkt. Sofern beide Spieler 2 Steine auf die 4 Ecken gelegt haben, erhält keiner einen Punkt.</p>
-            			<p>Hat ein Spieler alle 4 Ecken belegt, beendet er das Spiel.</p>
-            			<p>Die Moeraki-Kugel gilt als neutraler Punkt und zählt nicht zu einem Spieler. Dementsprechend gewinnt der Spieler einen Punkt der bei einem, an der Moeraki-Kugel angrenzendem, Feld die mehrheit (2) Spielsteine hat.</p>
-            			<p> Die Punktzählung erfolgt sobald ein Spielstein die letzte Ecke eines Quadrats füllt. Es kommt nicht darauf an, welcher Spieler diesen legte.</p>
-            			<p>Man kann nicht beenden, sofern man ein Quadrat schließt, das an die Moeraki-Kugel angrenzt.</p>
-            			<br/>
-            			<br/>
-            			<h3>Spielende</h3>
-            			<p> Es gbt drei Möglichkeiten ein Spiel zu beenden: </p>
-            			<ul>
-            				<li>"Tahuna": Es gelingt einem Spieler ein Quadrat vollständig zu umschließen.</li>
-            				<li>"Ara": Es gelingt einem Spieler, von der Moeraki-Kugel bis zum Rand mit seinen Kugel einen Linie zu bilden.</li>
-            				<li>"Marae": Sämtliche Ecken des Spielfelds sind belegt.</li>
-            			</ul>
-            			<p>Sobald ein Spiel beendet wurde, werden die Punkte gezählt. Der Spieler mit den meisten Punkten gewinnt.</p>
-            			<p>Der Spieler der beendet hat, gewinnt NICHT automatisch weil er beendet hat, sondern es werden regulär die Punkte gezählt.</p>
-            			<br/>
-            			<br/>
-            		</div>
+					<help-page></help-page>
 				</div>
 			</div>
-
 		</div>
 	</div>
 }
