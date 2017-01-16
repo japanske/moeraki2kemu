@@ -1,0 +1,149 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+
+<dom-module id="MoerakiKemu-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <div class="headline" >
+    	<center>
+    	<paper-material elevation="3">
+	    	<h1>Herzlich Willkommen zu Moeraki-Kemu!</h1>
+	    </paper-material>
+	    </center>
+	    </div>
+    		<div class="beschreibung">
+    		<center>
+    		<paper-material elevation="3">
+		    	<p>Als Ureinwohner im S&uumlden Neuseelands treten die Spieler als Oberhaupt eines<br> 
+		    	Maori-Stammes gegeneinander an, um ihren Anspruch auf einen heiligen Strandabschnitt zu beweisen.<br>
+				Dieses Zusammentreffen findet unblutig statt, da die Oberh&aumlupter ihren Anspruch durch ein Spiel ermitteln.
+				In diesem Spiel versuchen sie entweder durch eine besondere Konstellation an <br>
+				Spielsteinen ein vorzeitiges Spielende und den Spielsieg oder die Mehrheit bei den meisten Strandfeldern auf dem Spielbrett
+				zu erlangen und so durch Punkte zu gewinnen.<br>
+				So eben sind die Maori-Oberh&aumlupter am Marae (heiligen Boden) angekommen, lasset den Moeraki-Kemu beginnen.</p>
+    	</paper-material>
+    	</center>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'MoerakiKemu-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'MoerakiKemu-app',
+        },
+      },
+
+    });
+  </script>
+
+</dom-module>
+
+<dom-module id="help-page">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <div class="fontart">
+        <div class="mt2">
+		    <ul class="list-unstyled centerV">
+		        <div class="names">
+    			    <paper-material elevation="3">
+    			        <li> Janine Panske </li>
+    			        <li> Daniel Hipp </li>
+    			        <li><a  href="https://github.com/japanske/de.htwg.webtech.MoerakiKemu">GitHub</a></li>
+    			    </paper-material>
+		        </div>
+		     </ul>
+        </div>
+		<div class="help">
+		 	<paper-material elevation="3">
+	  			<h3 class="no-top-distance pt2">Spielvorbereitung</h3>
+	  			<p>Der erste Spieler bekommt die schwarzen Spielsteine, der zweite Spieler die wei&szligen</p>
+	  			<br>
+	  			<br>
+      			<h3>Spielbeginn</h3>
+       			<p>Der zweite Spieler darf die Moeraki-Kugel in eine der neun inneren Felder setzten.</p>
+       			<br>
+       			<br>
+       			<h3>Spielverlauf</h3>
+       			<p> Nachdem die Moeraki-Kugel gesetzt wurde, darf Spieler Eins auf eine beliebige Kante einen seiner Steine legen</p>
+       			<p> Anschließend setzt der zweite Spieler seinen Stein. Das wird abwechselnd fortgeführt, bis ein Spieler gewinnt.</p>
+       			<br>
+       			<h4>Legen von Spielsteinen</h4>
+       			<p>Wird ein Strandquadrat vollständig an allen Ecken von Spielsteinen eingeschlossen, werden die gleichfarbgen Steine gezählt. Der Spieler der 3 Spielsteine um das Quadrat gelegt hat, bekommt einen Punkt. Sofern beide Spieler 2 Steine auf die 4 Ecken gelegt haben, erhält keiner einen Punkt.</p>
+       			<p>Hat ein Spieler alle 4 Ecken belegt, beendet er das Spiel.</p>
+       			<p>Die Moeraki-Kugel gilt als neutraler Punkt und zählt nicht zu einem Spieler. Dementsprechend gewinnt der Spieler einen Punkt der bei einem, an der Moeraki-Kugel angrenzendem, Feld die mehrheit (2) Spielsteine hat.</p>
+       			<p> Die Punktzählung erfolgt sobald ein Spielstein die letzte Ecke eines Quadrats füllt. Es kommt nicht darauf an, welcher Spieler diesen legte.</p>
+       			<p>Man kann nicht beenden, sofern man ein Quadrat schließt, das an die Moeraki-Kugel angrenzt.</p>
+       			<br>
+       			<br>
+       			<h3>Spielende</h3>
+       			<p> Es gibt drei M&oumlglichkeiten ein Spiel zu beenden: </p>
+       			<ul>
+       				<li>"Tahuna": Es gelingt einem Spieler ein Quadrat vollständig zu umschließen.</li>
+       				<li>"Ara": Es gelingt einem Spieler, von der Moeraki-Kugel bis zum Rand mit seinen Kugel einen Linie zu bilden.</li>
+       				<li>"Marae": Sämtliche Ecken des Spielfelds sind belegt.</li>
+       			</ul>
+       			<p>Sobald ein Spiel beendet wurde, werden die Punkte gezählt. Der Spieler mit den meisten Punkten gewinnt.</p>
+       			<p>Der Spieler der beendet hat, gewinnt NICHT automatisch weil er beendet hat, sondern es werden regulär die Punkte gezählt.</p>
+       			<br>
+       			<br>
+       			</paper-material>
+       		</div>
+         </div>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'help-page',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'help-page',
+        },
+      },
+
+    });
+  </script>
+
+</dom-module>
+
+<dom-module id="game-page">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'game-page',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'game-page',
+        },
+      },
+
+    });
+  </script>
+
+</dom-module>
+
