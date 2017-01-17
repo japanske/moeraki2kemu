@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MoerakiKemu:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MoerakiKemu_jar</output-path>
+    <root id="archive" name="MoerakiKemu.jar">
+      <element id="module-output" name="MoerakiKemu" />
+    </root>
+  </artifact>
+</component>
