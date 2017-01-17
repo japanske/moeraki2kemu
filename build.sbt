@@ -9,10 +9,13 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
-  javaWs
+  javaWs,
+  "postgresql" % "postgresql" % "9.1-901-1.jdbc4",
+  "org.pac4j" % "play-pac4j" % "2.6.1",
+  "org.pac4j" % "pac4j-oidc" % "1.9.4" exclude("commons-io" , "commons-io"),
+  "commons-io" % "commons-io" % "2.4"
 )
 
-libraryDependencies += "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
 
 fork in run := true
 
