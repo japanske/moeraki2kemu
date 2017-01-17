@@ -13,14 +13,14 @@ import actors.lobbyActor;
  */
 public class HomeController extends Controller {
 
-    private lobbyActor lobbyActor = new LobbyActor();
+    private lobbyActor lobbyActor = new lobbyActor();
     
         public Result lobby() {
             return ok(lobby.render(lobbyActor.getNumberOfGames()));
         }
     
     public Result login() {
-        return ok(login.render());
+        return ok(login.render(""));
     }
     public Result index(int gameIndex) {
 

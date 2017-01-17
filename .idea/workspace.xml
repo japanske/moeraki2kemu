@@ -1,141 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4af86bd0-a3b4-44ff-abf9-66b2d25a14c0" name="Default" comment="Created new Branch">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/core-component-page/bowager-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-action-icons/action-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/my-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/MoerakiKemu_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/activator_launch_1_3_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="4af86bd0-a3b4-44ff-abf9-66b2d25a14c0" name="Default" comment="added lobby-class">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/connections/activator-373f7533-8cb4-441c-89c3-50979fbe60f4.log" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/connections/activator-5cd06120-4691-4b69-8187-0ac80133106b.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/MoerakiKemu.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/app/actors/JsonRender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/app/actors/lobbyActor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/app/actors/websocketActor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/app/views/lobby.scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/core-component-page/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/core-component-page/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/core-component-page/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/core-component-page/core-component-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/core-component-page/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/core-component-page/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/platform/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/platform/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/platform/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/platform/build.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/platform/platform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/platform/platform.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/PATENTS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-meta/polymer-meta.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/PATENTS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/polymer-selection.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/test/html/polymer-selection-multi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/test/html/polymer-selection.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/test/js/polymer-selection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selection/test/runner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/PATENTS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/docs.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/polymer-selector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/test/html/polymer-selector-activate-event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/test/html/polymer-selector-basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/test/html/polymer-selector-multi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/test/js/polymer-selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-selector/test/runner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-action-icons/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-action-icons/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-action-icons/action-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/PATENTS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/metadata.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/polymer-ui-breadcrumbs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-breadcrumbs/polymer-ui-breadcrumbs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/PATENTS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/metadata.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/polymer-ui-icon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/polymer-ui-icon.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-icon/polymer-ui-icons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/PATENTS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-iconset/polymer-ui-iconset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/PATENTS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer-ui-theme-aware/polymer-ui-theme-aware.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/build.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/polymer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/polymer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MoerakiKemu/bower_components/polymer/polymer.js.map" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MoerakiKemu/app/Filters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MoerakiKemu/app/Module.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MoerakiKemu/app/filters/ExampleFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MoerakiKemu/app/services/ApplicationTimer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MoerakiKemu/app/services/AtomicCounter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MoerakiKemu/app/services/Counter.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/connections/master.log" afterPath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/connections/master.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/master.log" afterPath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/master.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/previous.log" afterPath="$PROJECT_DIR$/MoerakiKemu/.sbtserver/previous.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/app/actors/mainActor.java" afterPath="$PROJECT_DIR$/MoerakiKemu/app/actors/mainActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/MoerakiKemu/app/controllers/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/app/views/main.scala.html" afterPath="$PROJECT_DIR$/MoerakiKemu/app/views/main.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/conf/routes" afterPath="$PROJECT_DIR$/MoerakiKemu/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/project/.sbtserver" afterPath="$PROJECT_DIR$/MoerakiKemu/project/.sbtserver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/app/actors/websocketActor.java" afterPath="$PROJECT_DIR$/MoerakiKemu/app/actors/websocketActor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MoerakiKemu/app/views/index.scala.html" afterPath="$PROJECT_DIR$/MoerakiKemu/app/views/index.scala.html" />
     </list>
     <ignored path="MoerakiKemu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -208,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MoerakiKemu/public/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -230,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainActor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mainActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MoerakiKemu/app/actors/mainActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+            <state relative-caret-position="164">
+              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -284,10 +158,10 @@
         <option value="$PROJECT_DIR$/MoerakiKemu/conf/routes" />
         <option value="$PROJECT_DIR$/MoerakiKemu/public/javascripts/websockets_client.js" />
         <option value="$PROJECT_DIR$/MoerakiKemu/app/views/main.scala.html" />
-        <option value="$PROJECT_DIR$/MoerakiKemu/app/actors/mainActor.java" />
         <option value="$PROJECT_DIR$/MoerakiKemu/app/views/login.scala.html" />
         <option value="$PROJECT_DIR$/MoerakiKemu/app/views/index.scala.html" />
         <option value="$PROJECT_DIR$/MoerakiKemu/public/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/MoerakiKemu/app/actors/mainActor.java" />
       </list>
     </option>
   </component>
@@ -1077,7 +951,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484591070931</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added lobby-class">
+      <created>1484637433461</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1484637433461</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1123,7 +1004,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="css updated + javascript updated" />
     <MESSAGE value="added .jar-File" />
     <MESSAGE value="added playfield" />
     <MESSAGE value="changed css for the field" />
@@ -1148,7 +1028,8 @@
     <MESSAGE value="master.log......!" />
     <MESSAGE value="Merged Polymer-Branch into Master" />
     <MESSAGE value="Created new Branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new Branch" />
+    <MESSAGE value="added lobby-class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lobby-class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1510,14 +1391,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MoerakiKemu/target/scala-2.11/twirl/main/views/html/board.template.scala" />
-    <entry file="file://$PROJECT_DIR$/MoerakiKemu/app/actors/mainActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MoerakiKemu/app/views/login.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1546,6 +1419,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="191" column="17" selection-start-line="191" selection-start-column="17" selection-end-line="191" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoerakiKemu/app/actors/mainActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
           <folding />
         </state>
       </provider>

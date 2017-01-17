@@ -40,7 +40,7 @@ public class mainActor {
     }
 
     public LegacyWebSocket<String> getWebSockets() {
-        final int size = websockets.size();
+        int size = websockets.size();
         if(size == 0 || size == 1){
             websockets.add(WebSocket.withActor(websocketActor::props));
             return websockets.get(size);

@@ -1,4 +1,4 @@
-package actor;
+package actors;
 
 import akka.actor.*;
 
@@ -13,8 +13,11 @@ public class websocketActor extends UntypedActor implements UserInterface, Obser
     private IControllerPlayer controllerPlayer;
     
     public static Props props(ActorRef out){
-        return Probs.create(websocketActor.class, out);
+        return Props.create(websocketActor.class, out);
     }
+    
+    private final ActorRef out;
+
     
     public websocketActor(ActorRef out, IController controller, IControllerPlayer controllerPlayer) {
         this.out = out;
@@ -60,7 +63,7 @@ public class websocketActor extends UntypedActor implements UserInterface, Obser
     
     @Override
     public void update() {
-        out.tell(JsonRender.getBoardAsJson(controller, playerController), self());
+        out.tell(JsonRender.getBoardAsJSON(controller, controllerPlayer), self());
     }
     
     private String occupyAndGetBoard(String coord){

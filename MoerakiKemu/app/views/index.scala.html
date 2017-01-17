@@ -1,4 +1,4 @@
-@(message: String)
+@(index: Integer)
 
 
 @main("Moeraki-Kemu") {
@@ -20,8 +20,8 @@
 				<div role="tabpanel" class="tab-pane" id="game">
 				    <div class="container mt5 index">
 				        <div class="col-md-3">
-		            		<p>Punkte <span id="player1Name">Player 1</span>: <textarea class="pl5 form-control" rows="1" id="player1Counter"></textarea></p>
-        			    	<p>Punkte <span id="player2Name">Player 2</span>: <textarea class="pl5 form-control" rows="1" id="player2Counter"></textarea></p>
+		            		<p>Punkte <span id="player1Name">Player 1</span>: <textarea class="pl5 form-control" rows="1" id="player1Counter" disable="disable"></textarea></p>
+        			    	<p>Punkte <span id="player2Name">Player 2</span>: <textarea class="pl5 form-control" rows="1" id="player2Counter" disable="disable"></textarea></p>
 				        </div>
     				    <div class="col-md-6 fieldplane center-block">
         					<div class="fieldrow">
@@ -106,7 +106,7 @@
         					</div>
         				</div>        			
         				<div class="col-md-3">
-        			        <textarea class="pl5 form-control" rows="22" id="clientText"></textarea>
+        			        <textarea class="pl5 form-control" rows="22" id="clientText" disable="disable"></textarea>
         			    </div>
         			</div>
 				</div>
