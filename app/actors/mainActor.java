@@ -37,7 +37,7 @@ public class mainActor extends UntypedActor implements UserInterface, ObserverOb
     	UserInterface[] interfaces;
     	interfaces = new UserInterface[2];
     	interfaces[0] = injector.getInstance(TextUI.class);
-    	interfaces[1] = new GUI(controller, playerController);
+    	//interfaces[1] = new GUI(controller, playerController);
 
     	for (int i = 0; i < interfaces.length; i++) {
     		((IObserverSubject) controller).attatch((ObserverObserver) interfaces[i]);
