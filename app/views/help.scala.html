@@ -1,0 +1,40 @@
+@main("Hilfeseite") {
+<div class="container">
+	<div class="headline" >
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Anleitung</h1>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm">
+				<ul class="list-unstyled centerV">
+					<li> Janine Panske </li>
+					<li> Daniel Hipp </li>
+				</ul>
+			</div>
+			<div class="col-md-2 text-nowrap hidden-xs">
+				<div id="github_link_header">
+					<a  href="https://github.com/japanske/de.htwg.webtech.MoerakiKemu">GitHub</a>
+				</div>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm btn-group" data-toggle="buttons">
+				<label class="btn btn-default">
+					<input type="radio" name="buttons_back" id="button-black" autocomplete="off"> D
+				</label>
+				<label class="btn btn-default active">
+					<input type="radio" name="buttons_back" id="button-white" autocomplete="off" checked> H
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row under-headline pl5">
+		<div class="col-md-8">
+		<MoerakiKemu-app></MoerakiKemu-app>
+		</div>
+		<div class="col-md-4">
+			<div class="fixed no-top-distance">
+				<img class="z-index3" src="@routes.Assets.versioned("images/anleitung_img.jpeg")"/6>
+			</div>
+		</div>
+	</div>
+</div>
+}
